@@ -1,46 +1,50 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- the entire body must be written by student -->
-    <form action="" method="post">
-        <h1>Car Insurance Registration Form</h1>
+    <form method="post">
+
         <label for="name">Name</label>
-        <input type="text" name="" id="name" required>
+        <input type="text" id="name" name="name" required>
         <br><br>
+
         <label for="email">Email</label>
-        <input type="email" id="email" required>
+        <input type="email" id="email" name="email" required>
         <br><br>
+
         <label for="male">Male</label>
         <input type="radio" id="male" name="gender" required>
-        <br><br>
+
         <label for="female">Female</label>
-        <input type="radio" id="female" name="gender" required>
+        <input type="radio" id="female" name="gender">
         <br><br>
-        <select name="dropdown" id="cars">
+
+        <label for="cars">Car Brands</label>
+        <select id="cars" name="cars">
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Mercedez">Mercedez</option>
         </select>
         <br><br>
+
         <label for="carage">Car Age</label>
-        <input type="number" id="carage" required>
+        <input type="number" id="carage" name="carage" required>
         <br><br>
+
         <label for="dop">Date of Purchase (dop)</label>
-        <input type="date" name="Date of Purchase (dop)" id="dop" required>
+        <input type="date" id="dop" name="dop" required>
         <br><br>
+
         <label for="password">Password</label>
-        <input type="password" required id="password">
+        <input type="password" id="password" name="password" required>
         <br><br>
-        <input type="submit">
-        <script type="text/javascript" src="./script.js">
-        </script>
+
+        <button type="submit">Submit</button>
+
     </form>
 </body>
-
 </html>
